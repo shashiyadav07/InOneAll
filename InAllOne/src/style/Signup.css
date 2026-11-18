@@ -1,0 +1,125 @@
+/* Main Page */
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Signup Box */
+.signup-form {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/* Heading */
+.signup-form h1 {
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #222;
+}
+
+/* Description */
+.signup-form p {
+    margin: 0 0 25px;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Input Fields */
+.signup-form input {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+/* Input Focus */
+.signup-form input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+/* Error */
+.error {
+    background: #ffe5e5;
+    color: #d60000;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Buttons */
+.signup-form button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+
+/* Button Hover */
+.signup-form button:hover {
+    background: #5568d9;
+    transform: translateY(-1px);
+}
+
+/* Login Button */
+.signup-form button:last-child {
+    background: transparent;
+    color: #667eea;
+    border: 1px solid #667eea;
+    margin-top: 10px;
+}
+
+.signup-form button:last-child:hover {
+    background: #667eea;
+    color: white;
+}
+.login-btn {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #667eea;
+    border-radius: 8px;
+    color: #667eea;
+    margin-top: 10px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .signup-form {
+        padding: 25px 20px;
+    }
+
+    .signup-form h1 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,125 @@
+.content {
+    width: 90%;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.content h2 {
+    margin: 0 0 25px;
+    text-align: center;
+    font-size: 28px;
+    color: #2563eb;
+}
+
+/* Form */
+.content form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Each input section */
+.resource,
+.category-select,
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Labels */
+.content label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input and Select */
+.content input,
+.content select,
+.content textarea {
+    width: 100%;
+    padding: 12px 14px;
+    box-sizing: border-box;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    font-size: 15px;
+    outline: none;
+    background: #fff;
+
+    transition: 0.2s ease;
+}
+
+/* Focus */
+.content input:focus,
+.content select:focus,
+.content textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Description */
+.content textarea {
+    min-height: 130px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* Required star */
+.description span {
+    color: red;
+}
+
+/* Upload button */
+.content button {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.content button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.content button:active {
+    transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .content {
+        width: 94%;
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    .content h2 {
+        font-size: 23px;
+    }
+
+    .content input,
+    .content select,
+    .content textarea {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,284 @@
+/* =========================
+   PAGE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #0f0f0f;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.app-title {
+    margin: 0;
+
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #0f0f0f;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* =========================
+   ADD BUTTON
+========================= */
+
+.add-button {
+    position: absolute;
+
+    top: 20px;
+    left: 30px;
+
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #ff0000;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+.add-button:hover {
+    background: #cc0000;
+}
+
+
+/* =========================
+   FILTER
+========================= */
+
+.filter-button {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    padding: 9px 16px;
+
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+
+    background: #f2f2f2;
+    color: #0f0f0f;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.filter-button:hover {
+    background: #e5e5e5;
+}
+
+
+/* =========================
+   CATEGORY BAR
+========================= */
+
+.category-bar {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 30px;
+
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+
+    background: #fff;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+}
+
+.category-bar::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================
+   CATEGORY LINK
+========================= */
+
+.category-bar a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+/* =========================
+   CATEGORY ITEM
+========================= */
+
+.category-item {
+    flex-shrink: 0;
+
+    padding: 9px 16px;
+
+    border-radius: 8px;
+
+    background: #f2f2f2;
+
+    color: #0f0f0f;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease,
+                color 0.2s ease;
+}
+
+
+/* Hover */
+
+.category-item:hover {
+    background: #e5e5e5;
+}
+
+
+/* =========================
+   HOME ACTIVE STYLE
+========================= */
+
+.category-item:first-child {
+    background: #0f0f0f;
+    color: #fff;
+}
+
+.category-item:first-child:hover {
+    background: #272727;
+}
+
+
+/* =========================
+   ADD MENU
+========================= */
+
+.add-button + ul {
+    position: absolute;
+
+    top: 65px;
+    left: 30px;
+
+    z-index: 10;
+
+    width: 160px;
+
+    margin: 0;
+    padding: 8px;
+
+    background: #fff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+
+    list-style: none;
+}
+
+.add-button + ul li {
+    list-style: none;
+
+    padding: 9px 10px;
+
+    border-radius: 6px;
+}
+
+.add-button + ul li:hover {
+    background: #f2f2f2;
+}
+
+.add-button + ul li a {
+    text-decoration: none;
+
+    color: #0f0f0f;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .app-title {
+        height: 65px;
+
+        font-size: 23px;
+    }
+
+    .add-button {
+        top: 15px;
+        left: 12px;
+
+        padding: 8px 14px;
+
+        font-size: 13px;
+    }
+
+    .filter-button {
+        top: 15px;
+        right: 12px;
+
+        padding: 8px 13px;
+
+        font-size: 13px;
+    }
+
+    .category-bar {
+        gap: 8px;
+
+        padding: 10px 12px;
+    }
+
+    .category-item {
+        padding: 8px 13px;
+
+        font-size: 13px;
+    }
+
+    .add-button + ul {
+        top: 55px;
+        left: 12px;
+    }
+}

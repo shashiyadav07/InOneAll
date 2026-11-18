@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+}
+
+.filter-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  background: #f8fafc;
+}
+
+/* Heading */
+
+.filter-page h2 {
+  margin: 0 0 25px;
+  font-size: 28px;
+  color: #0f0f0f;
+}
+
+
+/* Filter section */
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 18px;
+  max-width: 500px;
+}
+
+.filter-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+
+/* Select + Input */
+
+.filter-group select,
+.filter-group input {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  color: #0f0f0f;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* Buttons */
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 5px 0 30px;
+}
+
+.filter-buttons button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #0f0f0f;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.filter-buttons button:hover {
+  background: #272727;
+}
+
+
+/* Result section */
+
+.filter-result {
+  margin-top: 20px;
+}
+
+.filter-result h3 {
+  margin: 0 0 18px;
+  font-size: 20px;
+  color: #0f0f0f;
+}
+
+.filter-result > p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+
+/* Resource Card */
+
+.filter-card {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 16px;
+  padding: 18px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: 0.2s ease;
+}
+
+.filter-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Category */
+
+.filter-category {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+
+/* Resource details */
+
+.filter-card p {
+  margin: 7px 0;
+  color: #475569;
+  font-size: 14px;
+}
+
+.filter-card strong {
+  color: #0f172a;
+}
+
+
+/* Description */
+
+.filter-card .filter-description {
+  margin-top: 12px;
+  line-height: 1.5;
+  color: #374151;
+}
+
+
+/* Open Resource */
+
+.filter-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.filter-card a:hover {
+  background: #1d4ed8;
+}
+
+
+/* Tablet */
+
+@media (max-width: 800px) {
+
+  .filter-page {
+    padding: 22px;
+  }
+
+  .filter-group {
+    max-width: 100%;
+  }
+
+  .filter-card {
+    max-width: 100%;
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .filter-page {
+    padding: 15px;
+  }
+
+  .filter-page h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .filter-group {
+    margin-bottom: 15px;
+  }
+
+  .filter-group select,
+  .filter-group input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .filter-buttons {
+    margin-bottom: 25px;
+  }
+
+  .filter-buttons button {
+    width: 100%;
+  }
+
+  .filter-result h3 {
+    font-size: 18px;
+  }
+
+  .filter-card {
+    padding: 15px;
+  }
+
+  .filter-card p {
+    font-size: 13px;
+  }
+
+}
